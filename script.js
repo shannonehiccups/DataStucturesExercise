@@ -2,7 +2,8 @@
 const jedi = [];
 
 // 1b. Using index add "Luke" to the jedi array
-jedi[jedi.length]= "luke";
+// jedi[jedi.length]= "luke";
+jedi[0]= "Luke"
 console.log(jedi);
 
 // 1c. Using the Push method add "Obi-Wan Kenobi" to the jedi array
@@ -56,12 +57,10 @@ console.log(droids);
 
 // BONUS 
 // 4. Using indexes display the "V" from "Darth Vader" from the starWarsVillains array (You will need a console log for this)
-
-
+console.log(starWarsVillains[0][6]);
 
 // 5. Using only negative numbers display "Darth Sidious" from the sithLords array using Slice (You will need a console log for this)
-
-
+console.log(sithLords.slice(-2,-1));
 
 // 6a. Create a const variable named starWarsMovies and set the value to an array of three objects (AKA An array with three items in it and each item is a separate object). Use the following keys and values for each object in the array: 1st OBJECT (episodeOne: "The Phantom Menace", episodeTwo: "Attack of the Clones", and episodeThree: "Revenge of the Sith"). 2nd OBJECT (episodeFour: "A New Hope", episodeFive: "The Empire Strikes Back", and episodeSix: "Return of the Jedi"). 3rd OBJECT (episodeSeven: "The Force Awakens", episodeEight: "The Last Jedi", and  episodeNine: "The Rise of Skywalker"). I would suggest using some copy and paste on this one.
 const starWarsMovies = [{episodeOne: "The Phantom Menace", episodeTwo: "Attack of the Clones", episodeThree: "Revenge of the Sith"}, 
@@ -70,3 +69,5 @@ const starWarsMovies = [{episodeOne: "The Phantom Menace", episodeTwo: "Attack o
 console.log(starWarsMovies);
 
 // 6b. Using an array method add the following string values ("Solo" and "Rogue One") between the 1st and 2nd OBJECTS in the starWarsMovies array.
+starWarsMovies.splice(1,0, "Solo", "Rouge One");
+// (<index where it is starting>, <how many to remove>, <new values that are being added, add as many as needed>)
